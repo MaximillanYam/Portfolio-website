@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maximillan Yam</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Maximillan Yam</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certification">Certification</a></li>
+          <li><a href="#contact" id="contact-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Maximillan Yam</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#certification" onclick="toggleMenu()">certification</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profilepic.jpg" alt="Maximillan Yam" class="circle-image"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Maximillan Yam</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/YamMaximillan.pdf')"
+          >
+            Resume
+          </button>
+        </div>
+        <div id="socials-container">
+            <img
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+                onclick="window.open('https://www.linkedin.com/in/maximillan-yam-3978ab237/', '_blank')"
+            />
+            <img
+                src="./assets/github.png"
+                alt="Maximillan Yam"
+                class="icon"
+                onclick="window.open('https://github.com/MaximillanYam', '_blank')"
+            />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p><b>Queens College</b><br />B.S Of Computer Science</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p class="text-about">
+                I am a current third year studying Computer Science at Queens College developing strong fundamentals.
+                I have gained skills in developing <b>distributed systems</b> and best <b>software engineering</b> practices from my previous experiences. I am expanding my scope to include <b>cloud networking services</b>, <b>cybersecurity</b>, and <b>AI/ML</b>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="experience-item">
+                <img src="./assets/pnnl.png" alt="Maximillan Yam" class="experience-icon1">
+                <div>
+                    <h2 class="experience-sub-title">Pacific Northwest National Laboratory </h2>
+                    <div class="role">
+                        <h3>Role: Software Engineer Intern</h3>
+                        <p>Developed a reliable, fault-tolerant storage system as a service for a distributed system, enhancing efficiency through streamlined APIs and publisher/subscriber services. Utilized Docker for containerization, scaling services to over 100 instances, and collaborated on robust software architectures using Git for version control, significantly improving project efficiency and code quality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/D4E0BAQFJwYUQ2dPVKA/company-logo_100_100/0/1719127765375?e=1730332800&v=beta&t=uqYMQ5DJYfhhsAh1wDwbcLd0NwBkHivG3nF5Yj40oeE" alt="Maximillan Yam" class="experience-icon2">
+                <div>
+                    <h2 class="experience-sub-title">Mergen</h2>
+                    <div class="role">
+                        <h3>Role: Software Engineer Intern</h3>
+                        <p>Leverage expertise in Next.js, Amazon Web Services (AWS) Amplify, and Docker to seamlessly connect frontend interfaces with backend databases and servers. Establish robust engineering processes to facilitate scalable growth. Utilize proficiency in AWS services like EC2, S3, DynamoDB, Lambda, Cognito, Amplify Hosting, and Storage to deliver high-quality, full-stack products.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-item">
+                <img src="https://media.licdn.com/dms/image/D4E0BAQGJ5j3fUqrp5Q/company-logo_100_100/0/1708200043507/theheadstarter_logo?e=1730332800&v=beta&t=8lOkIH39eIvsVb3ZKAtN9TzmVd9d4YXnX8uG6xIP3rQ" alt="Maximillan Yam" class="experience-icon3">
+                <div>
+                    <h2 class="experience-sub-title">Headstarter AI</h2>
+                    <div class="role">
+                        <h3>Role: Software Engineering Fellow</h3>
+                        <p>Embark on a 7-week journey through our remote and asynchronous program, where I will develop five AI projects, compete in hackathons, and launch a project targeting 1,000+ users. Drawing inspiration from the success of our alumni, 50% of whom have secured roles at industry giants like Google, Apple, and leading startups, I am poised to enhance my skills and career prospects.                          
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more experience items as needed -->
+        </div>
+    </section>
+
+    <section id="certification">
+      <h2 class="title">Certifications</h2>
+      <div class="certification-container">
+          <div class="certification-card">
+              <div class="certification-image">
+                  <img src="https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264051233/amazon_web_services_logo?e=1730332800&v=beta&t=x0pLQXn_317lUQXG93nxeo81_qtalQ-bq7p8ECnWYTg" alt="Maximillan Yam">
+              </div>
+              <h3 class="experience-sub-title">Certified Solutions Architect</h3>
+              <p>Issuing Organization: Amazon Web Services</p>
+          </div>
+          <div class="certification-card">
+              <div class="certification-image">
+                  <img src="https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264051233/amazon_web_services_logo?e=1730332800&v=beta&t=x0pLQXn_317lUQXG93nxeo81_qtalQ-bq7p8ECnWYTg" alt="Maximillan Yam">
+              </div>
+              <h3 class="experience-sub-title">Certified Cloud Practitioner</h3>
+              <p>Issuing Organization: Amazon Web Services</p>
+          </div>
+      </div>
+  </section>
+
+      <!-- Contact overlay -->
+      <div id="contact-overlay" class="overlay">
+        <div class="overlay-content">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+          <p>&copy; Maximillan Yam</p>
+      </div>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

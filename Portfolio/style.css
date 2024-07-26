@@ -1,0 +1,566 @@
+/* Importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* HAMBURGER MENU */
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/* SECTIONS */
+section {
+    padding-top: 14vh; /* Adjust as needed to create the desired spacing */
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* PROFILE SECTION */
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+/* ABOUT SECTION */
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.text-container {
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 50%;
+}
+
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+#experience {
+    position: relative;
+}
+
+.title {
+    margin-bottom: 2rem; /* Adjust the value as needed */
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience-item {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 1rem;
+}
+
+.experience-icon1,
+.experience-icon2,
+.experience-icon3 {
+    height: 10rem; /* Adjust the height as needed */
+    width: 10rem; /* Adjust the width as needed */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    align-self: flex-start; /* Ensures the image is aligned to the top */
+}
+
+.experience-icon1 {
+    border: 4px solid transparent; /* Border width for the gradient */
+    border-image: linear-gradient(to right, #ff6000, #ff9000, #ffcc00); /* Vivid shades of orange */
+    border-image-slice: 1; /* Ensures the gradient fills the border */
+}
+
+.experience-icon2 {
+    border: 4px solid transparent; /* Border width for the gradient */
+    border-image: linear-gradient(to right, #9b59b6, #6a1b9a, #4a148c); /* Vivid shades of purple */
+    border-image-slice: 1; /* Ensures the gradient fills the border */
+}
+
+.experience-icon3 {
+    border: 4px solid transparent; /* Border width for the gradient */
+    border-image: linear-gradient(to right, #2ecc71, #1abc9c, #16a085); /* Vivid shades of green */
+    border-image-slice: 1; /* Ensures the gradient fills the border */
+}
+
+.role {
+    padding-top: 0.5rem; /* Adjust the value as needed */
+}
+
+.role h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.role p {
+    font-size: 1rem;
+    line-height: 1.2; /* Adjust the value as needed */
+}
+
+/* CERTIFICATIONS SECTION */
+#certifications {
+    margin-top: 4rem; /* Increased margin for consistency */
+}
+
+.title {
+    text-align: center; /* Center the title */
+    margin-bottom: 2rem; /* Increased margin for consistency */
+    color: #333; /* Darker color */
+    font-weight: bold; /* Bold font weight */
+    font-size: 2rem; /* Larger font size */
+}
+
+.certification-container {
+    display: flex;
+    justify-content: center; /* Center the cards */
+    gap: 2rem; /* Increased gap for consistency */
+}
+
+.certification-card {
+    width: 300px; /* Fixed width to control the card width */
+    border: 4px solid transparent; /* Border width for the gradient */
+    border-image: linear-gradient(to right, #ffcc00, #0073BB); /* Yellow to Blue gradient */
+    border-image-slice: 1; /* Ensures the gradient fills the border */
+    border-radius: 8px;
+    padding: 1.5rem; /* Increased padding for consistency */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.certification-card .certification-image {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border: 4px solid transparent; /* Border width for the gradient */
+    border-image: linear-gradient(to right, #ffcc00, #0073BB); /* Yellow to Blue gradient */
+    border-image-slice: 1; /* Ensures the gradient fills the border */
+    overflow: hidden;
+    margin-bottom: 1.5rem; /* Increased margin for consistency */
+}
+
+.certification-card .certification-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the square container */
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem; /* Ensure this matches the other section titles */
+    margin-bottom: 1rem; /* Increased margin for consistency */
+}
+
+.certification-card p {
+    margin: 0.5rem 0;
+}
+
+/* Contact Overlay */
+#contact-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears on top of other content */
+    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#contact-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+#contact-overlay .overlay-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transform: scale(0.9);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#contact-overlay.active .overlay-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+#contact-overlay .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact-overlay .close-btn:hover {
+    color: #0073BB; /* Change color on hover */
+}
+
+#contact-overlay form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-overlay label {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+#contact-overlay input,
+#contact-overlay textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#contact-overlay input:focus,
+#contact-overlay textarea:focus {
+    border-color: #0073BB; /* Change border color on focus */
+}
+
+#contact-overlay button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0073BB; /* Match this color with your site's theme */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact-overlay button:hover {
+    background-color: #005a9e; /* Darker shade on hover */
+}
+
+/* Contact Link Animation */
+#contact-link {
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+#contact-link:hover {
+    color: #0073BB; /* Change color on hover */
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    padding: 20px 0; /* Padding top and bottom */
+    text-align: center; /* Center align text */
+    margin-top: 4rem; /* Increased margin for consistency */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
